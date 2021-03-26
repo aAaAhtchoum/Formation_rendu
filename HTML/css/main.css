@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+
+:root {
+  --primary-color: #007AF3;
+}
+
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+  font-family: 'Poppins';
+  color: black;
+}
+
+main{
+    width: 960px;
+    background-color: #E2E2E2;
+    margin: 0px auto 10px auto;
+}
+
+main img{
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+/*header*/
+nav{
+    display: flex;
+    place-content: space-between;
+    padding: 0px 50px;
+    background-color: rgb(30, 35, 40);
+    height: 50px;
+}
+
+nav a{
+  padding: 5px;
+  text-align: center;
+  margin-bottom: auto;
+  margin-top: auto;
+  color: linen;
+  text-decoration: none;  
+}
+
+/*Ligne de couleur*/
+.color-mark{
+  background-color: var(--primary-color);
+  height: 5px;
+}
+
+.hero{
+  text-align: center;
+  font-size: 150%;
+}
+
+/*Image du haut*/
+.home-pic-top{
+  margin-bottom :-15px;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+}
+
+/*Double image du bas*/
+.home-duo-bot{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* fraction*/
+  height: 100%;
+}
+
+.bot-pic-left{
+  position: relative;
+  text-align: center;
+}
+
+.bot-pic-right{
+  position: relative;
+  text-align: center;
+  object-fit: fill;
+}
+
+/* Debut du bouton spécial */
+.container {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  font-family: 'Lato', sans-serif;
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: rgba(0 , 0, 0, 0.6);
+  border: 1px solid var(--primary-color);
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: var(--primary-color);
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .2em;
+}
+/* Fin du bouton spécial */
+
+
+/*Pied de page*/
+footer{
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* fraction*/
+  text-align: center;
+  background-color: rgb(20, 20, 30);
+
+}
+footer a{
+  color: #A2A2A2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
