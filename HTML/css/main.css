@@ -23,6 +23,7 @@ main{
 main img{
   margin-bottom: auto;
   margin-top: auto;
+  display: block;
 }
 
 /*header*/
@@ -83,10 +84,6 @@ nav a{
 .bot-pic-left{
   position: relative;
   text-align: center;
-}
-
-img{
-  display: block;
 }
 
 .bot-pic-right{
