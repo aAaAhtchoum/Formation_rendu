@@ -67,7 +67,7 @@ nav a{
 
 /*Image du haut*/
 .home-pic-top{
-  margin-bottom :-15px;
+  margin-bottom :-10px;
   padding: 0px;
   position: relative;
   text-align: center;
@@ -83,6 +83,10 @@ nav a{
 .bot-pic-left{
   position: relative;
   text-align: center;
+}
+
+img{
+  display: block;
 }
 
 .bot-pic-right{
@@ -151,6 +155,49 @@ svg {
 }
 /* Fin du bouton spécial */
 
+/* Generic content */
+
+.generic-content{
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 4fr 5fr; /* fraction*/
+}
+
+.generic-content-reverse{
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 5fr 4fr; /* fraction*/
+}
+
+.generic-pic{
+  padding: 25px;
+  display: block;
+  margin: auto 0;
+}
+
+.generic-pic img{
+width: 100%;
+height: 100%;
+}
+
+.generic-txt{
+  padding: 25px;
+  text-align: justify;
+  font-size: 120%;
+  margin: auto;
+}
+
+.border-left{
+  border-left: solid;
+  border-color: rgb(58, 58, 58);
+}
+
+.border-right{
+  border-right: solid;
+  border-color: rgb(58, 58, 58);
+}
 
 /*Pied de page*/
 footer{
