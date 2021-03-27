@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
 
 :root {
-  --primary-color: #007AF3;
+  --primary-color: #ffa500;
 }
 
 
 body {
   background: #F2F2F2;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: 'Lexend';
   color: black;
 }
 
 main{
-    width: 960px;
+    width: 900px;
     background-color: #E2E2E2;
     margin: 0px auto 10px auto;
 }
@@ -41,6 +41,17 @@ nav a{
   margin-top: auto;
   color: linen;
   text-decoration: none;  
+}
+
+.logo{
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 120%;
+  letter-spacing: .1em;
+}
+
+.logo span{
+  color: var(--primary-color);
 }
 
 /*Ligne de couleur*/
@@ -104,7 +115,7 @@ nav a{
   width: 180px;
   height: 60px;
   cursor: pointer;
-  background: rgba(0 , 0, 0, 0.6);
+  background: rgba(0 , 0, 0, 0.60);
   border: 1px solid var(--primary-color);
   outline: none;
   transition: 1s ease-in-out;
@@ -123,14 +134,14 @@ svg {
 
 .btn:hover {
   transition: 1s ease-in-out;
-  background: var(--primary-color);
+  background: black;
 }
 
 .btn:hover svg {
   stroke-dashoffset: -480;
 }
 
-.btn a {
+.btn p {
   color: white;
   font-size: 18px;
   font-weight: bold;

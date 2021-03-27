@@ -11,12 +11,13 @@
 <body>
     <main>
         <nav>
-            <img src="images/pikarun.gif" alt="pikapika" width="50px" height="40px">
-            <a href="#">3D Print</a>
-            <a href="#">Metal</a>
-            <a href="#">Wood</a>
-            <a href="#">Contact</a>
-            <a href="#">About Us</a>
+
+          <a class="logo" href="index.html">Cutting<span>Edge</span></a>
+          <a href="print.html">3D Print</a>
+          <a href="metal.html">Metal</a>
+          <a href="wood.html" >Wood</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
         </nav>
 
         <div class="color-mark"></div>
@@ -34,12 +35,12 @@
             </div>-->
             <div class="container">
                 <div class="center">
-                  <button class="btn">
+                  <button class="btn" id="print-btn">
                     <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                       <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                       <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                     </svg>
-                    <a href="#">3D printer</a>
+                    <p>3D printer</p>
                   </button>
                 </div>
               </div>
@@ -50,12 +51,12 @@
                 <img src="images/home_metal.jpg" alt="home_metal" width="100%">
                 <div class="container">
                     <div class="center">
-                      <button class="btn">
+                      <button class="btn" id="metal-btn">
                         <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                           <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                           <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                         </svg>
-                        <a href="#">Metal</a>
+                        <p>Metal</p>
                       </button>
                     </div>
                   </div>
@@ -65,12 +66,12 @@
                 <img src="images/home_wood.jpg" alt="home_wood" width="100%">
                 <div class="container">
                     <div class="center">
-                      <button class="btn">
+                      <button class="btn" id="wood-btn">
                         <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                           <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                           <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                         </svg>
-                        <a href="#">Wood</a>
+                        <p>Wood</p>
                       </button>
                     </div>
                   </div>
@@ -80,25 +81,43 @@
         <div class="color-mark"></div>
 
         <footer>
-            <div>
-                <a href="#">home</a>
-                <br>
-                <a href="#">3D printers</a>
-                <br>
-                <a href="#">metal</a>
-                <br>
-                <a href="#">wood</a>
-            </div>
-            <div>
-                <a href="#">about us</a>
-                <br>
-                <a href="#">contact</a>
+          <div>
+              <a href="index.html">home</a>
+              <br>
+              <a href="print.html">3D printers</a>
+              <br>
+              <a href="metal.html">metal</a>
+              <br>
+              <a href="wood.html">wood</a>
+          </div>
+          <div>
+              <a href="about.html">about us</a>
+              <br>
+              <a href="contact.html">contact</a>
 
-            </div>
-            <div>
-                <a href="#">legal info</a>
-            </div>
-        </footer>
+          </div>
+          <div>
+              <a href="legal.html">legal info</a>
+          </div>
+      </footer>
     </main>
+
+    <script>
+      const WoodBtn = document.getElementById('wood-btn')
+      WoodBtn.addEventListener('click', () => {
+        location.href = "wood.html";
+        })
+
+      const MetalBtn = document.getElementById('metal-btn')
+      MetalBtn.addEventListener('click', () => {
+        location.href = "metal.html";
+        })
+
+      const PrintBtn = document.getElementById('print-btn')
+      PrintBtn.addEventListener('click', () => {
+        location.href = "print.html";
+        })
+    </script>
+
 </body>
 </html>
