@@ -11,7 +11,6 @@
 <body>
     <main>
         <nav>
-
             <a class="logo" href="index.html">Cutting<span>Edge</span></a>
             <a href="print.html">3D Print</a>
             <a href="metal.html">Metal</a>
@@ -22,7 +21,47 @@
 
         <div class="color-mark"></div>
 
+        <section class="contact">
 
+            <div class="contact-top">
+                <h1>Contact Us</h1>
+                <p>Use this form to contact us and receive detailled princing information for your project, one of our team member will come back to you shortly</p>
+                <p>You can also directly send us an email at : </p>
+                <a href="mailto:cuttingedge.contact@gmail.com">cuttingedge.contact@gmail.com</a>
+                <p>Or by phone at : (+33) 0123456789</p>
+            </div>
+
+            <div class="contact-cta">
+              <form action="#" method="GET" id="my-form">
+          
+                <div class="form-group">
+                  <label for="Name"> Name</label>
+                  <input type="text" id="name" name="name">
+                </div>
+          
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="techno">What technology:</label>
+                    <select id="techno" name="technolist" form="my-form">
+                    <option value="ndy">Not decided yet</option>
+                    <option value="print">3D printer</option>
+                    <option value="metal">Metal</option>
+                    <option value="wood">Wood</option>
+                    </select>
+                </div>
+          
+                <div class="form-group">
+                  <label for="massage">Message</label>
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Any questions / context on your request"></textarea>
+                </div>
+          
+                <button type="submit">SEND</button>
+              </form>
+          </section>
         
 
         <div class="color-mark"></div>

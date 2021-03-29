@@ -157,6 +157,34 @@ svg {
 /* Fin du bouton spécial */
 /* Fin page d'acceuil */
 
+/* Estimation btn*/
+.estimation-cta{
+  height: auto;
+  background-color: white;
+  padding: 25px;
+}
+
+.estimation-btn{
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0px;
+  width: 250px; 
+  font-family: Lato;
+  border: solid 2px var(--primary-color);
+  background-color: rgb(20, 20, 30);
+  border-radius: .3em;
+  font-size: 24px;
+}
+
+.estimation-btn:hover{
+  background-color: rgb(60, 60, 80);
+}
+
+.estimation-btn a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 /* Generic content */
 .generic-content{
   display: grid;
@@ -208,6 +236,7 @@ height: 100%;
   background-color: white;
 }
 
+.contact h1,
 .about h1{
   letter-spacing: .1em;
   color: var(--primary-color);
@@ -298,11 +327,102 @@ height: 100%;
   background-color: lightgray;
   background-color: white;
 }
-  
+
+/* Contact */
+
+.contact {
+  height: 100%;
+  width: 100%;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.contact-top{
+  text-align: center;
+  width: 500px;
+  text-align: justify;
+}
+
+.contact-cta {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-group select,
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+.contact button[type="submit"] {
+  width: 100%;
+  border: solid 1px;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Lato";
+  font-weight: bold;
+  letter-spacing: .1em;
+  color:var(--primary-color);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: rgb(20, 20, 30);
+  transition: 0.3s ease background-color;
+}
+.contact button[type="submit"]:hover {
+  background-color: rgb(60, 60, 80);
+}
+
+/*Pricing*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.prices-table{
+  padding: 25px 100px;
+  background-color: white;
+}
+
 /*Pied de page*/
 
 iframe{
   width: 100%;
+  height: 120px;
 }
 
 footer{
