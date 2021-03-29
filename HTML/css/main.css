@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-family: 'Lexend';
   color: black;
+
 }
 
 main{
@@ -66,8 +67,23 @@ nav a{
 }
 
 .hero{
-  text-align: center;
+  text-align: justify;
   font-size: 150%;
+  padding: 10px 50px;
+  font-family: 'Lato';
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  border: solid 2px;
+}
+
+.hero .big-logo{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.big-logo span{
+  color: var(--primary-color);
 }
 
 /*Image du haut*/
