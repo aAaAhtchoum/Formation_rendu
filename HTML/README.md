@@ -4,7 +4,7 @@ This Website present the fictive company Cutting edge who provide workshop servi
 
 ## Pages
 
-The website have 9 pages :
+The website have 8 pages :
 
 - Home
 - Print
