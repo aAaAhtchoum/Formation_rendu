@@ -1,6 +1,6 @@
 # Projet Html/Css
 
-This Website present the fictive company Cutting edge who provide workshop services around wood and metal work, as well a proposing 3D printing services
+This Website present the fictive company "CuttingEdge" who provide workshop services around wood and metal work, as well as 3D printing services
 
 ## Pages
 
