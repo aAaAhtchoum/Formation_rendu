@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+    
+
+</head>
+<body>
+    <main class="home">
+
+        <div class="color-mark"></div>
+
+        <!--Company name + catch phrase-->
+        <div class="hero">
+            <p class="big-logo">&lt Cutting<span>Edge</span> &gt</p>
+            <p class="catch">At CuttingEdge Workshop we provide tools and 
+              expertise to help you in your hardware projects : Shape Metal 
+              into any forms, cut and perfect the finest wood peices, and 
+              create overly complex plastic or resin structures with our army of 3D printers !
+            </p>
+        </div>
+
+        <!-- Top picture with fancy buttons-->
+        <div class="home-pic-top">
+            <img src="images/home_3d_print.jpg" alt="home_3d_print" width="100%">
+            <div class="container">
+                <div class="center">
+                  <button class="btn" id="print-btn">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <p>3D printer</p>
+                  </button>
+                </div>
+              </div>
+        </div>
+
+        <!-- Bottom dual picture -->
+        <div class="home-duo-bot">
+            <div class="bot-pic-left">
+                <img src="images/home_metal.jpg" alt="home_metal" width="100%">
+                <div class="container">
+                    <div class="center">
+                      <button class="btn" id="metal-btn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <p>Metal</p>
+                      </button>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="bot-pic-right">
+                <img src="images/home_wood.jpg" alt="home_wood" width="100%">
+                <div class="container">
+                    <div class="center">
+                      <button class="btn" id="wood-btn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <p>Wood</p>
+                      </button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="color-mark"></div>
+    </main>
+
+    <!-- small script so 100% of the fancy buttons are clickable -->
+    <script>
+      const WoodBtn = document.getElementById('wood-btn')
+      WoodBtn.addEventListener('click', () => {
+        location.href = "wood.html";
+        })
+
+      const MetalBtn = document.getElementById('metal-btn')
+      MetalBtn.addEventListener('click', () => {
+        location.href = "metal.html";
+        })
+
+      const PrintBtn = document.getElementById('print-btn')
+      PrintBtn.addEventListener('click', () => {
+        location.href = "print.html";
+        })
+    </script>
+
+</body>
+</html>

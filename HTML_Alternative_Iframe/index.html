@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+   
+
+</head>
+<body>
+    <main class="home">
+        <nav>
+          <!--Totaly not forgot to put that here-->
+          <div class="dropdown">
+            <button class="dropbtn"><a class="logo" href="index.html">Cutting<span>Edge</span></a></button>
+            <div class="dropdown-content">
+            <a href="print.html" target="MyFrame">3D Print</a>
+            <a href="metal.html" target="MyFrame">Wood</a>
+            <a href="wood.html" target="MyFrame">Metal</a>
+            <a href="contact.html" target="MyFrame">Contact</a>
+            <a href="about.html" target="MyFrame">About Us</a>
+            <a href="pricing.html" target="MyFrame">Pricing</a>
+            <a href="legal.html" target="MyFrame">Legal</a>
+            </div>
+          </div>
+          <a href="print.html" target="MyFrame">3D Print</a>
+          <a href="metal.html" target="MyFrame">Metal</a>
+          <a href="wood.html" target="MyFrame">Wood</a>
+          <a href="contact.html" target="MyFrame">Contact</a>
+          <a href="about.html" target="MyFrame">About Us</a>
+        </nav>
+
+        <div class="color-mark"></div>
+
+        <iframe src="home.html" name="MyFrame" onload='javascript:(function(o){o.style.height=50+o.contentWindow.document.body.scrollHeight+"px";}(this)); ' style="height:200px;width:100%;border:none;overflow:hidden;"></iframe>
+
+        <div class="color-mark"></div>
+        <!-- Footer -->
+        <footer>
+          <div>
+              <a target="MyFrame" href="index.html">home</a>
+              <br>
+              <a target="MyFrame" href="print.html">3D printers</a>
+              <br>
+              <a target="MyFrame" href="metal.html">metal</a>
+              <br>
+              <a target="MyFrame" href="wood.html">wood</a>
+          </div>
+          <div>
+              <a target="MyFrame" href="about.html">about us</a>
+              <br>
+              <a target="MyFrame" href="contact.html">contact</a>
+  
+          </div>
+          <div>
+              <a target="MyFrame" href="legal.html">legal info</a>
+              <br>
+              <a target="MyFrame" href="pricing.html">pricing</a>
+          </div>
+      </footer>
+      
+    </main>
+
+    <!-- small script so 100% of the fancy buttons are clickable -->
+    <script>
+      const WoodBtn = document.getElementById('wood-btn')
+      WoodBtn.addEventListener('click', () => {
+        location.href = "wood.html";
+        })
+
+      const MetalBtn = document.getElementById('metal-btn')
+      MetalBtn.addEventListener('click', () => {
+        location.href = "metal.html";
+        })
+
+      const PrintBtn = document.getElementById('print-btn')
+      PrintBtn.addEventListener('click', () => {
+        location.href = "print.html";
+        })
+    </script>
+
+
+
+</body>
+</html>

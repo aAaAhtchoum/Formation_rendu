@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contact Us</title>
+
+</head>
+<body>
+    <main>
+
+
+        <section class="contact">
+
+            <div class="contact-top">
+                <h1>Contact Us</h1>
+                <p>Use this form to contact us and receive detailled princing information for your project, one of our team member will come back to you shortly</p>
+                <p>You can also directly send us an email at : </p>
+                <a href="mailto:cuttingedge.contact@gmail.com">cuttingedge.contact@gmail.com</a>
+                <p>Or by phone at : (+33) 0123456789</p>
+            </div>
+
+            <div class="contact-cta">
+              <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST" id="my-form">
+          
+                <div class="form-group">
+                  <label for="Name"> Name</label>
+                  <input type="text" id="name" name="name">
+                </div>
+                <!-- Form ask for name, email, chose the techno and message -->
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="techno">What technology:</label>
+                    <select id="techno" name="techno" form="my-form">
+                    <option value="not_specified">Not decided yet</option>
+                    <option value="print">3D printer</option>
+                    <option value="metal">Metal</option>
+                    <option value="wood">Wood</option>
+                    </select>
+                </div>
+          
+                <div class="form-group">
+                  <label for="massage">Message</label>
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Any questions / context on your request"></textarea>
+                </div>
+          
+                <button type="submit">SEND</button>
+              </form>
+          </section>
+
+    </main>
+</body>
+</html>
