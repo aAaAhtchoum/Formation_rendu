@@ -17,4 +17,4 @@ The website have 8 pages :
 
 ## Bootstrap
 
-This version of the website use vannila bootstrap for styling
+This version of the website use vanilla bootstrap for styling
