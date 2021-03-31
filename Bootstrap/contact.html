@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <main style="width: 960px; margin: 0px auto 0px auto;">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand -->
+                <!--<a class="navbar-brand" href="#">Cutting<span style="color: orange;">Edge</span></a>-->
+                <a class="navbar-brand" href="#" id="navbardrop" data-toggle="dropdown">
+                    Cutting<span style="color: orange;">Edge</span>
+                </a>
+                <div class="dropdown-menu bg-light">
+                    <a class="dropdown-item" href="index.html">Home</a>
+                    <a class="dropdown-item" href="print.html">3D Print</a>
+                    <a class="dropdown-item" href="metal.html">Wood</a>
+                    <a class="dropdown-item" href="wood.html">Metal</a>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                    <a class="dropdown-item" href="pricing.html">Pricing</a>
+                    <a class="dropdown-item" href="legal.html">Legal</a>
+                </div>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link px-4" href="print.html">3D Print</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-4" href="metal.html">Metal</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-4" href="wood.html">Wood</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-4 active" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-4" href="about.html">About</a>
+                    </li>
+
+                </ul>
+            </nav> 
+        </div>
+
+        <div class="container pt-5">
+            <h1>Contact Us</h1>
+            <div class="row col-12">
+                <p>Use this form to contact us and receive detailled princing information for your project, one of our team member will come back to you shortly</p>
+                <p>You can also directly send us an email at : </p>
+                <div class="row col-12">
+                    <a href="mailto:cuttingedge.contact@gmail.com">cuttingedge.contact@gmail.com</a>
+                </div>
+                <p class="pt-3">Or by phone at : (+33) 0123456789</p>
+            </div>
+        </div>
+
+        <div class="container pb-5">
+            <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST" id="my-form">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="name"> Name</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email </label>
+                    <input type="email" id="email" name="email" required class="form-control"  placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="techno">What Technology </label>
+                    <select class="form-control" id="techno" name="techno" form="my-form">
+                        <option value="not_specified">Not decided yet</option>
+                        <option value="print">3D printer</option>
+                        <option value="metal">Metal</option>
+                        <option value="wood">Wood</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block ">Submit</button>
+            </form>
+        </div>
+
+        <iframe src="footer.html" frameborder="0" style="width: 100%; height: 120px;"></iframe>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>

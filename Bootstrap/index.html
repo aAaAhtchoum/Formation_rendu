@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Home</title>
+
+</head>
+<body>
+    <main class="home">
+        <nav>
+          <!--Totaly not forgot to put that here-->
+          <div class="dropdown">
+            <button class="dropbtn"><a class="logo" href="index.html">Cutting<span>Edge</span></a></button>
+            <div class="dropdown-content">
+            <a href="print.html">3D Print</a>
+            <a href="metal.html">Wood</a>
+            <a href="wood.html">Metal</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="legal.html">Legal</a>
+            </div>
+          </div>
+          <a href="print.html">3D Print</a>
+          <a href="metal.html">Metal</a>
+          <a href="wood.html" >Wood</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </nav>
+
+        <div class="color-mark"></div>
+
+        <!--Company name + catch phrase-->
+        <div class="hero">
+            <p class="big-logo">&lt Cutting<span>Edge</span> &gt</p>
+            <p class="catch">At CuttingEdge Workshop we provide tools and 
+              expertise to help you in your hardware projects : Shape Metal 
+              into any forms, cut and perfect the finest wood peices, and 
+              create overly complex plastic or resin structures with our army of 3D printers !
+            </p>
+        </div>
+
+        <!-- Top picture with fancy buttons-->
+        <div class="home-pic-top">
+            <img src="images/home_3d_print.jpg" alt="home_3d_print" width="100%">
+            <div class="container">
+                <div class="center">
+                  <button class="btn" id="print-btn">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <p>3D printer</p>
+                  </button>
+                </div>
+              </div>
+        </div>
+
+        <!-- Bottom dual picture -->
+        <div class="home-duo-bot">
+            <div class="bot-pic-left">
+                <img src="images/home_metal.jpg" alt="home_metal" width="100%">
+                <div class="container">
+                    <div class="center">
+                      <button class="btn" id="metal-btn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <p>Metal</p>
+                      </button>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="bot-pic-right">
+                <img src="images/home_wood.jpg" alt="home_wood" width="100%">
+                <div class="container">
+                    <div class="center">
+                      <button class="btn" id="wood-btn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <p>Wood</p>
+                      </button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="color-mark"></div>
+        <!-- Footer -->
+        <iframe src="footer.html" frameborder="0"></iframe>
+    </main>
+
+    <!-- small script so 100% of the fancy buttons are clickable -->
+    <script>
+      const WoodBtn = document.getElementById('wood-btn')
+      WoodBtn.addEventListener('click', () => {
+        location.href = "wood.html";
+        })
+
+      const MetalBtn = document.getElementById('metal-btn')
+      MetalBtn.addEventListener('click', () => {
+        location.href = "metal.html";
+        })
+
+      const PrintBtn = document.getElementById('print-btn')
+      PrintBtn.addEventListener('click', () => {
+        location.href = "print.html";
+        })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
