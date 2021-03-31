@@ -4,27 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <title>Legal Information</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
 
 </head>
 <body>
-    <main>
-        <nav>
+    <main style="width: 960px; margin: 0px auto 0px auto;">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand -->
+            <!--<a class="navbar-brand" href="#">Cutting<span style="color: orange;">Edge</span></a>-->
+            <a class="navbar-brand" href="#" id="navbardrop" data-toggle="dropdown">
+                Cutting<span style="color: orange;">Edge</span>
+            </a>
+            <div class="dropdown-menu bg-light">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="print.html">3D Print</a>
+                <a class="dropdown-item" href="metal.html">Wood</a>
+                <a class="dropdown-item" href="wood.html">Metal</a>
+                <a class="dropdown-item" href="contact.html">Contact</a>
+                <a class="dropdown-item" href="about.html">About Us</a>
+                <a class="dropdown-item" href="pricing.html">Pricing</a>
+                <a class="dropdown-item" href="legal.html">Legal</a>
+            </div>
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link px-4" href="print.html">3D Print</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="metal.html">Metal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="wood.html">Wood</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="about.html">About</a>
+              </li>
 
-            <a class="logo" href="index.html">Cutting<span>Edge</span></a>
-            <a href="print.html">3D Print</a>
-            <a href="metal.html">Metal</a>
-            <a href="wood.html" >Wood</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html"style="font-weight: 700;">About Us</a>
-        </nav>
+            </ul>
+        </nav> 
 
-        <div class="color-mark"></div>
-        <!-- Satirical to the way to long and complex and poor visiblity of this type of stuff -->
-        <div class="annoying">
+        <div class="container-fluid">
             <h1>Term of use</h1>
-            <div class="txt-scroll">
+            <div class="bg-light">
                 <h2>Website Terms of Use</h2>
                 <p>Version 1.0</p>
                 <p>Here is an overly complicated piece of text explaining how you can't sue us.</p>
@@ -112,20 +139,16 @@
                 <p>Email: <span class="highlight preview_email">Email@Website.com</span></p>
             </div>
         </div>
-        
-        <div class="term-choice">
-            <div class="agreed">
-                <a href="#">I Agree</a>
-            </div>
-            <div class="decline-nt">
-                <a href="#">I Decline'nt</a>
-            </div>
+        <div class="container-fluid py-3">
+            <button type="button" class="mx-5 px-5 btn btn-lg btn-primary">I Agree</button>
+            <button type="button" class="mx-5 px-5 btn btn-lg btn-outline-secondary">I Decline'nt</button>    
         </div>
-
-        <div class="color-mark"></div>
-
-        <iframe src="footer.html" frameborder="0"></iframe>
+    <iframe src="footer.html" frameborder="0" style="width: 100%; height: 120px;"></iframe>
 
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -4,119 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <title>Home</title>
 
+    <style>
+      h2{
+        background-color: rgba(0, 0, 0, 0.65);
+        border-radius: .2em;
+        padding: 5px 0px;
+        color: orange;
+      }
+    </style>
+
 </head>
 <body>
-    <main class="home">
-        <nav>
-          <!--Totaly not forgot to put that here-->
-          <div class="dropdown">
-            <button class="dropbtn"><a class="logo" href="index.html">Cutting<span>Edge</span></a></button>
-            <div class="dropdown-content">
-            <a href="print.html">3D Print</a>
-            <a href="metal.html">Wood</a>
-            <a href="wood.html">Metal</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About Us</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="legal.html">Legal</a>
-            </div>
+    <main style="width: 960px; margin: 0px auto 0px auto;">
+      <div class="">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <!-- Brand -->
+          <!--<a class="navbar-brand" href="#">Cutting<span style="color: orange;">Edge</span></a>-->
+          <a class="navbar-brand" href="#" id="navbardrop" data-toggle="dropdown">
+              Cutting<span style="color: orange;">Edge</span>
+          </a>
+          <div class="dropdown-menu bg-light">
+              <a class="dropdown-item" href="index.html">Home</a>
+              <a class="dropdown-item" href="print.html">3D Print</a>
+              <a class="dropdown-item" href="metal.html">Wood</a>
+              <a class="dropdown-item" href="wood.html">Metal</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="about.html">About Us</a>
+              <a class="dropdown-item" href="pricing.html">Pricing</a>
+              <a class="dropdown-item" href="legal.html">Legal</a>
           </div>
-          <a href="print.html">3D Print</a>
-          <a href="metal.html">Metal</a>
-          <a href="wood.html" >Wood</a>
-          <a href="contact.html">Contact</a>
-          <a href="about.html">About Us</a>
-        </nav>
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link px-4" href="print.html">3D Print</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="metal.html">Metal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="wood.html">Wood</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="about.html">About</a>
+            </li>
+
+          </ul>
+      </nav> 
+      </div>
+
 
         <div class="color-mark"></div>
 
         <!--Company name + catch phrase-->
-        <div class="hero">
-            <p class="big-logo">&lt Cutting<span>Edge</span> &gt</p>
-            <p class="catch">At CuttingEdge Workshop we provide tools and 
+        <div class="container-fluid my-3">
+            <div class="row justify-content-center mt-4">
+              <h1>&lt Cutting<span style="color: orange;">Edge</span> &gt</h1>
+            </div>
+            <h3 class="text-justify px-5 py-3">At CuttingEdge Workshop we provide tools and 
               expertise to help you in your hardware projects : Shape Metal 
               into any forms, cut and perfect the finest wood peices, and 
               create overly complex plastic or resin structures with our army of 3D printers !
-            </p>
+            </h3>
         </div>
-
-        <!-- Top picture with fancy buttons-->
-        <div class="home-pic-top">
-            <img src="images/home_3d_print.jpg" alt="home_3d_print" width="100%">
-            <div class="container">
-                <div class="center">
-                  <button class="btn" id="print-btn">
-                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                    </svg>
-                    <p>3D printer</p>
-                  </button>
-                </div>
+        <div class="container-fluid mb-5">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="print.html">
+                  <img src="images/home_3d_print_resize.jpg" class="d-block w-100" alt="home_3d_print">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>3D Printer</h2>
+                  </div>
+                </a>
               </div>
+              <div class="carousel-item">
+                <a href="wood.html">
+                  <img src="images/home_wood_resize.jpg" class="d-block w-100" alt="home_wood">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>Wood</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="metal.html">
+                  <img src="images/home_metal_resize.jpg" class="d-block w-100" alt="home_metal">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>Metal</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Bottom dual picture -->
-        <div class="home-duo-bot">
-            <div class="bot-pic-left">
-                <img src="images/home_metal.jpg" alt="home_metal" width="100%">
-                <div class="container">
-                    <div class="center">
-                      <button class="btn" id="metal-btn">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                        </svg>
-                        <p>Metal</p>
-                      </button>
-                    </div>
-                  </div>
-            </div>
-            
-            <div class="bot-pic-right">
-                <img src="images/home_wood.jpg" alt="home_wood" width="100%">
-                <div class="container">
-                    <div class="center">
-                      <button class="btn" id="wood-btn">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                        </svg>
-                        <p>Wood</p>
-                      </button>
-                    </div>
-                  </div>
-            </div>
-        </div>
 
-        <div class="color-mark"></div>
-        <!-- Footer -->
-        <iframe src="footer.html" frameborder="0"></iframe>
+        <iframe src="footer.html" frameborder="0" style="width: 100%; height: 120px;"></iframe>
     </main>
-
-    <!-- small script so 100% of the fancy buttons are clickable -->
-    <script>
-      const WoodBtn = document.getElementById('wood-btn')
-      WoodBtn.addEventListener('click', () => {
-        location.href = "wood.html";
-        })
-
-      const MetalBtn = document.getElementById('metal-btn')
-      MetalBtn.addEventListener('click', () => {
-        location.href = "metal.html";
-        })
-
-      const PrintBtn = document.getElementById('print-btn')
-      PrintBtn.addEventListener('click', () => {
-        location.href = "print.html";
-        })
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

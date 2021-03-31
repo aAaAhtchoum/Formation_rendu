@@ -15,3 +15,6 @@ The website have 8 pages :
 - Pricing
 - Legal
 
+## Bootstrap
+
+This version of the website use vannila bootstrap for styling
